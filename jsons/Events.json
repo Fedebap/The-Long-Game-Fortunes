@@ -1,0 +1,432 @@
+[
+  {
+    "name": "Fortune",
+    "presentation": "None",
+    "civilopediaText": [
+      {
+        "text": "The Long Game: Fortunes. Picks one random event that fits your situation."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Plague",
+        "uniques": [
+          "Triggers a [Plague] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>",
+          "Only available <when number of [[Population] in [All] Cities] is more than [19]>"
+        ]
+      },
+      {
+        "text": "Bountiful Harvest",
+        "uniques": [
+          "Triggers a [Bountiful Harvest] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>"
+        ]
+      },
+      {
+        "text": "Drought",
+        "uniques": [
+          "Triggers a [Drought] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>",
+          "Only available <when number of [Cities] is more than [1]>"
+        ]
+      },
+      {
+        "text": "Gold Rush",
+        "uniques": [
+          "Triggers a [Gold Rush] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>",
+          "Only available <when number of [[Owned [Gold Ore] Tiles] + [Owned [Silver] Tiles]] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Comet",
+        "uniques": [
+          "Triggers a [Comet] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>"
+        ]
+      },
+      {
+        "text": "Pirate Raid",
+        "uniques": [
+          "Triggers a [Pirate Raid] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>",
+          "Only available <when number of [[Coastal] Cities] is more than [0]> <when number of [[{Military} {Water}] Units] is equal to [0]>"
+        ]
+      },
+      {
+        "text": "Mercenary Band",
+        "uniques": [
+          "Triggers a [Mercenary Band] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>",
+          "Only available <starting from the [Classical era]>"
+        ]
+      },
+      {
+        "text": "Wandering Scholar",
+        "uniques": [
+          "Triggers a [Wandering Scholar] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>"
+        ]
+      },
+      {
+        "text": "Great Fire",
+        "uniques": [
+          "Triggers a [Great Fire] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>",
+          "Only available <when number of [[Population] in [All] Cities] is more than [11]>"
+        ]
+      },
+      {
+        "text": "Heresy",
+        "uniques": [
+          "Triggers a [Heresy] event",
+          "Set [Fortune Cooldown] to [floor(12 * [Speed modifier for [Food]] / 100 + 0.5)] <hidden from users>",
+          "Only available <after founding a religion>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Plague",
+    "text": "Sickness spreads through our crowded cities. How do we respond?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Quarantine",
+        "civilopediaText": [
+          {
+            "text": "-25% growth in all cities for 10 turns."
+          }
+        ],
+        "uniques": [
+          "Set [Quarantine] to [max([Quarantine], floor(10 * [Speed modifier for [Food]] / 100 + 0.5))] <hidden from users>"
+        ]
+      },
+      {
+        "text": "Hire physicians",
+        "civilopediaText": [
+          {
+            "text": "Pay 100 Gold."
+          }
+        ],
+        "uniques": [
+          "Gain [-100] [Gold] <(modified by game speed)> <hidden from users>",
+          "Only available <when number of [Gold] is more than [floor(99 * [Speed modifier for [Gold]] / 100)]>"
+        ]
+      },
+      {
+        "text": "Let it run its course",
+        "civilopediaText": [
+          {
+            "text": "Lose 2 population in a random city."
+          }
+        ],
+        "uniques": [
+          "[-2] population in a random city"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bountiful Harvest",
+    "text": "The granaries overflow after a perfect season!",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Hold a festival",
+        "civilopediaText": [
+          {
+            "text": "+25% growth in all cities for 8 turns."
+          }
+        ],
+        "uniques": [
+          "Set [Harvest Festival] to [max([Harvest Festival], floor(8 * [Speed modifier for [Food]] / 100 + 0.5))] <hidden from users>"
+        ]
+      },
+      {
+        "text": "Sell the surplus",
+        "civilopediaText": [
+          {
+            "text": "+75 Gold."
+          }
+        ],
+        "uniques": [
+          "Gain [75] [Gold] <(modified by game speed)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Drought",
+    "text": "The rains have failed. Fields are turning to dust.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Ration the grain",
+        "civilopediaText": [
+          {
+            "text": "-15% growth in all cities for 8 turns."
+          }
+        ],
+        "uniques": [
+          "Set [Rationing] to [max([Rationing], floor(8 * [Speed modifier for [Food]] / 100 + 0.5))] <hidden from users>"
+        ]
+      },
+      {
+        "text": "Buy grain abroad",
+        "civilopediaText": [
+          {
+            "text": "Pay 80 Gold."
+          }
+        ],
+        "uniques": [
+          "Gain [-80] [Gold] <(modified by game speed)> <hidden from users>",
+          "Only available <when number of [Gold] is more than [floor(79 * [Speed modifier for [Gold]] / 100)]>"
+        ]
+      },
+      {
+        "text": "Pray for rain",
+        "civilopediaText": [
+          {
+            "text": "Spend 40 Faith."
+          }
+        ],
+        "uniques": [
+          "Gain [-40] [Faith] <(modified by game speed)> <hidden from users>",
+          "Only available <when number of [Faith] is more than [floor(39 * [Speed modifier for [Faith]] / 100)]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gold Rush",
+    "text": "Prospectors have struck a rich vein in our lands!",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Stake the claims",
+        "civilopediaText": [
+          {
+            "text": "+150 Gold now."
+          }
+        ],
+        "uniques": [
+          "Gain [150] [Gold] <(modified by game speed)>"
+        ]
+      },
+      {
+        "text": "Invest in the mines",
+        "civilopediaText": [
+          {
+            "text": "+3 Gold in the capital for 15 turns."
+          }
+        ],
+        "uniques": [
+          "Set [Mining Boom] to [max([Mining Boom], floor(15 * [Speed modifier for [Food]] / 100 + 0.5))] <hidden from users>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Comet",
+    "text": "A blazing comet crosses the night sky. Everyone has an opinion about what it means.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Ask the astronomers",
+        "civilopediaText": [
+          {
+            "text": "+40 Science."
+          }
+        ],
+        "uniques": [
+          "Gain [40] [Science] <(modified by game speed)>"
+        ]
+      },
+      {
+        "text": "Ask the priests",
+        "civilopediaText": [
+          {
+            "text": "+40 Faith."
+          }
+        ],
+        "uniques": [
+          "Gain [40] [Faith] <(modified by game speed)>"
+        ]
+      },
+      {
+        "text": "Ask the poets",
+        "civilopediaText": [
+          {
+            "text": "+30 Culture."
+          }
+        ],
+        "uniques": [
+          "Gain [30] [Culture] <(modified by game speed)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pirate Raid",
+    "text": "Pirates threaten our coast, and we have no navy to stop them.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Pay tribute",
+        "civilopediaText": [
+          {
+            "text": "Pay 60 Gold."
+          }
+        ],
+        "uniques": [
+          "Gain [-60] [Gold] <(modified by game speed)> <hidden from users>",
+          "Only available <when number of [Gold] is more than [floor(59 * [Speed modifier for [Gold]] / 100)]>"
+        ]
+      },
+      {
+        "text": "Defy them",
+        "civilopediaText": [
+          {
+            "text": "They raid a town: lose 1 population in a random city."
+          }
+        ],
+        "uniques": [
+          "[-1] population in a random city"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mercenary Band",
+    "text": "A band of seasoned mercenaries offers its services.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Hire them",
+        "civilopediaText": [
+          {
+            "text": "Pay 120 Gold: 2 free units of the current era."
+          }
+        ],
+        "uniques": [
+          "Gain [-120] [Gold] <(modified by game speed)> <hidden from users>",
+          "Only available <when number of [Gold] is more than [floor(119 * [Speed modifier for [Gold]] / 100)]>",
+          "[2] free [Spearman] units appear <before the [Medieval era]>",
+          "[2] free [Pikeman] units appear <during the [Medieval era]>",
+          "[2] free [Musketman] units appear <during the [Renaissance era]>",
+          "[2] free [Rifleman] units appear <during the [Industrial era]>",
+          "[2] free [Infantry] units appear <starting from the [Modern era]>"
+        ]
+      },
+      {
+        "text": "Send them away",
+        "civilopediaText": [
+          {
+            "text": "Half the time, they take offence and turn rebel."
+          }
+        ],
+        "uniques": [
+          "A [Spearman] rebels <with [50]% chance> <before the [Medieval era]>",
+          "A [Pikeman] rebels <with [50]% chance> <during the [Medieval era]>",
+          "A [Musketman] rebels <with [50]% chance> <during the [Renaissance era]>",
+          "A [Rifleman] rebels <with [50]% chance> <during the [Industrial era]>",
+          "A [Infantry] rebels <with [50]% chance> <starting from the [Modern era]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wandering Scholar",
+    "text": "A famous scholar arrives at court, looking for a patron.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Become their patron",
+        "civilopediaText": [
+          {
+            "text": "Pay 50 Gold for 100 Science."
+          }
+        ],
+        "uniques": [
+          "Gain [-50] [Gold] <(modified by game speed)> <hidden from users>",
+          "Gain [100] [Science] <(modified by game speed)>",
+          "Only available <when number of [Gold] is more than [floor(49 * [Speed modifier for [Gold]] / 100)]>"
+        ]
+      },
+      {
+        "text": "Ask for a story",
+        "civilopediaText": [
+          {
+            "text": "+25 Culture."
+          }
+        ],
+        "uniques": [
+          "Gain [25] [Culture] <(modified by game speed)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Great Fire",
+    "text": "Fire sweeps through the timber quarters of one of our cities!",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Rebuild at once",
+        "civilopediaText": [
+          {
+            "text": "Pay 100 Gold."
+          }
+        ],
+        "uniques": [
+          "Gain [-100] [Gold] <(modified by game speed)> <hidden from users>",
+          "Only available <when number of [Gold] is more than [floor(99 * [Speed modifier for [Gold]] / 100)]>"
+        ]
+      },
+      {
+        "text": "Let it burn out",
+        "civilopediaText": [
+          {
+            "text": "Lose 1 population in a random city."
+          }
+        ],
+        "uniques": [
+          "[-1] population in a random city"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heresy",
+    "text": "A charismatic preacher questions our faith, and crowds gather to listen.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Call a council",
+        "civilopediaText": [
+          {
+            "text": "Spend 50 Faith, gain 40 Culture."
+          }
+        ],
+        "uniques": [
+          "Gain [-50] [Faith] <(modified by game speed)> <hidden from users>",
+          "Gain [40] [Culture] <(modified by game speed)>",
+          "Only available <when number of [Faith] is more than [floor(49 * [Speed modifier for [Faith]] / 100)]>"
+        ]
+      },
+      {
+        "text": "Let them preach",
+        "civilopediaText": [
+          {
+            "text": "-15% Faith for 10 turns."
+          }
+        ],
+        "uniques": [
+          "Set [Schism] to [max([Schism], floor(10 * [Speed modifier for [Food]] / 100 + 0.5))] <hidden from users>"
+        ]
+      }
+    ]
+  }
+]

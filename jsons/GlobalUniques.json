@@ -1,0 +1,22 @@
+{
+  "name": "Global Uniques",
+  "uniques": [
+    "Triggers a [Fortune] event <upon turn start> <with [8]% chance> <when number of [Fortune Cooldown] is less than [1]> <after turn number [10]> <for [Major] Civilizations> <hidden from users>",
+    "Provides [-1] [Fortune Cooldown] <when number of [Fortune Cooldown] is more than [0]> <hidden from users>",
+    "Provides [-1] [Quarantine] <when number of [Quarantine] is more than [0]> <hidden from users>",
+    "[-25]% growth [in all cities] <when number of [Quarantine] is more than [0]>",
+    "Provides [-1] [Harvest Festival] <when number of [Harvest Festival] is more than [0]> <hidden from users>",
+    "[+25]% growth [in all cities] <when number of [Harvest Festival] is more than [0]>",
+    "Provides [-1] [Rationing] <when number of [Rationing] is more than [0]> <hidden from users>",
+    "[-15]% growth [in all cities] <when number of [Rationing] is more than [0]>",
+    "Provides [-1] [Mining Boom] <when number of [Mining Boom] is more than [0]> <hidden from users>",
+    "[+3 Gold] [in capital] <when number of [Mining Boom] is more than [0]>",
+    "Provides [-1] [Schism] <when number of [Schism] is more than [0]> <hidden from users>",
+    "[-15]% [Faith] [in all cities] <when number of [Schism] is more than [0]>"
+  ],
+  "civilopediaText": [
+    {
+      "text": "Fortunes: about every 25 turns (Standard speed), a random event fitting your situation asks for a decision."
+    }
+  ]
+}

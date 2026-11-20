@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Fortune Cooldown",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded",
+      "Doesn't generate naturally",
+      "Excluded from map editor",
+      "Not shown on world screen",
+      "Will not be displayed in Civilopedia"
+    ]
+  },
+  {
+    "name": "Quarantine",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded",
+      "Doesn't generate naturally",
+      "Excluded from map editor",
+      "Not shown on world screen <when number of [Quarantine] is less than [1]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Plague quarantine: -25% growth in all cities."
+      },
+      {
+        "text": "The number shown is the turns remaining."
+      }
+    ]
+  },
+  {
+    "name": "Harvest Festival",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded",
+      "Doesn't generate naturally",
+      "Excluded from map editor",
+      "Not shown on world screen <when number of [Harvest Festival] is less than [1]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Harvest festival: +25% growth in all cities."
+      },
+      {
+        "text": "The number shown is the turns remaining."
+      }
+    ]
+  },
+  {
+    "name": "Rationing",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded",
+      "Doesn't generate naturally",
+      "Excluded from map editor",
+      "Not shown on world screen <when number of [Rationing] is less than [1]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Drought rationing: -15% growth in all cities."
+      },
+      {
+        "text": "The number shown is the turns remaining."
+      }
+    ]
+  },
+  {
+    "name": "Mining Boom",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded",
+      "Doesn't generate naturally",
+      "Excluded from map editor",
+      "Not shown on world screen <when number of [Mining Boom] is less than [1]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mining boom: +3 Gold in the capital."
+      },
+      {
+        "text": "The number shown is the turns remaining."
+      }
+    ]
+  },
+  {
+    "name": "Schism",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded",
+      "Doesn't generate naturally",
+      "Excluded from map editor",
+      "Not shown on world screen <when number of [Schism] is less than [1]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Schism: -15% Faith."
+      },
+      {
+        "text": "The number shown is the turns remaining."
+      }
+    ]
+  }
+]
